@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 2% 5%;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div#contenedor {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2%;
+  box-sizing: border-box;
+  background-color: rgba(112, 24, 24, 0.26);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1#titulo {
+  text-transform: uppercase;
+  color: #040503;
+  font-size: 3.5rem;
+  margin: 2% auto 6% auto;
+  padding: 4%;
+  width: 80%;
+  border-radius: 10px;
+  background-color: rgba(218, 218, 218, 0.885);
+  letter-spacing: 1rem;
+  text-shadow: -5px 3px 8px rgba(58, 43, 43, 0.521);
+}
+
+label span {
+  color: #0c0c0c;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-style: italic;
+  transition: 0.2s;
+}
+
+label span:hover {
+  cursor: pointer;
+  color: rgba(140, 100, 57, 0.645);
+}
+
+label input[type="radio"]:checked ~ span {
+  color: rgba(63, 39, 14, 0.529);
+}
+
+input {
+  border: 1px solid #d1d1d1;
+  border-radius: 2px;
+  font-size: 1.1rem;
+}
+
+input:focus {
+  border: 0;
+  outline: 0;
+}
+
+input[type="radio"] {
+  margin: 0 2%;
+  -moz-appearance: none;
+}
+
+input[type="radio"]::after {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  left: -5px;
+  visibility: visible;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+input[type="radio"]:checked::after {
+  border-radius: 5px;
+}
+
+input#b_ColorRojo::after {
+  background-color: rgb(207, 121, 121);
+  border: 2px solid rgb(207, 121, 121);
+}
+
+input#b_ColorRojo:checked::after {
+  border: 2px solid rgb(199, 66, 66);
+}
+
+input#b_ColorAzul::after {
+  background-color: rgb(121, 149, 207);
+  border: 2px solid rgb(121, 149, 207);
+}
+
+input#b_ColorAzul:checked::after {
+  border: 2px solid rgb(55, 98, 184);
+}
+
+input#b_ColorVerde::after {
+  background-color: rgb(111, 180, 122);
+  border: 2px solid rgb(111, 180, 122);
+}
+
+input#b_ColorVerde:checked::after {
+  border: 2px solid rgb(56, 145, 69);
+}
+
+input#b_ColorAmarillo::after {
+  background-color: rgb(212, 206, 124);
+  border: 2px solid rgb(212, 206, 124);
+}
+
+input#b_ColorAmarillo:checked::after {
+  border: 2px solid rgb(168, 159, 55);
+}
+
+input#b_Plato {
+  padding: 1.5%;
+  margin: 2% 0 0 0;
+  width: 85%;
+  border: solid #e9caabb6 2px;
+  border-radius: 5px;
+  background-color: rgba(229, 230, 235, 0.8);
+  transition: 0.2s;
+}
+
+input#b_Plato:focus {
+  border: solid #da8428b6 2px;
+  background-color: rgba(238, 233, 233, 1);
+  outline: 0;
+}
+
+div#opciones {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1%;
+  background-color: #da8428b6;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+input.boton-opcion {
+  margin: 1% 3%;
+  border: none;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  transition: 0.2s;
+}
+
+input.boton-opcion:hover {
+  transform: rotate(-6deg);
+  cursor: pointer;
+}
+
+input#b_Nuevo {
+  background: url("../img/insertar.svg") no-repeat;
+  background-size: 20px;
+}
+
+input#b_Eliminar {
+  background: url("../img/eliminar.svg") no-repeat;
+  background-size: 20px;
+}
+
+input#b_Tachar {
+  background: url("../img/tachar.svg") no-repeat;
+  background-size: 20px;
+}
+
+input#b_Activar {
+  background: url("../img/activar.svg") no-repeat;
+  background-size: 20px;
+}
+
+input#b_Marcar {
+  background: url("../img/marcar.svg") no-repeat;
+  background-size: 20px;
+}
+
+input#b_MarcarColor {
+  background: url("../img/marcarcolor2.svg") no-repeat;
+  background-size: 20px;
+}
+
+input#b_Desmarcar {
+  background: url("../img/desmarcar.svg") no-repeat;
+  background-size: 20px;
+}
+
+input#b_Ordenar {
+  background: url("../img/ordenar.svg") no-repeat;
+  background-size: 20px;
+}
+
+div#mensaje {
+  margin: 2% auto;
+  font-size: 1.1rem;
+  transition: 2s;
+}
+
+input.boton-edicion {
+  margin: 0 3%;
+  border: none;
+  width: 20px;
+  height: 20px;
+  float: right;
+  background-position: center;
+  transition: 0.2s;
+  background: url("../img/editar.svg") no-repeat;
+  background-size: 20px;
+}
+
+input.boton-edicion:hover {
+  transform: rotate(-6deg);
+  cursor: pointer;
+}
+
+div#platos {
+  width: 86%;
+  margin: 1% auto;
+  padding: 2%;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+div#platos label {
+  display: block;
+  margin: 1% 0;
+  padding: 2% 1%;
+  border-radius: 4px;
+}
+
+div#platos label span {
+  text-transform: capitalize;
+  color: #000000;
+  margin-left: 2%;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+
+input[type="checkbox"] {
+  margin: 0 1.5%;
+  -moz-appearance: none;
+}
+
+input[type="checkbox"]::after {
+  width: 18px;
+  height: 18px;
+  padding: 2px;
+  border-radius: 10px;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  left: -5px;
+  visibility: visible;
+  border: 1px solid #f6f8f6;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="checkbox"]:checked::after {
+  border-radius: 5px;
+  background-color: #685d55;
+  border: 1px solid rgb(223, 183, 183);
+  color: #f6f8f6;
+  content: "\2714";
+  text-align: center;
+}
+
+@media (max-width: 360px) {
+  body {
+    margin: 0;
+    padding: 2%;
+  }
+
+  div#contenedor {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3%;
+  }
+
+  h1#titulo {
+    font-size: 1.5rem;
+    margin: 1% auto 3% auto;
+    padding: 6%;
+    width: 80%;
+    letter-spacing: 0.25rem;
+  }
+
+  input[type="radio"] {
+    margin: 2% 8%;
+  }
+
+  label input[type="radio"] ~ span {
+    display: none;
+  }
+
+  input#b_Plato {
+    width: 98%;
+  }
+
+  div#opciones {
+    width: 95%;
+  }
+
+  input.boton-opcion {
+    margin: 2% 2%;
+    width: 16px;
+    height: 16px;
+  }
+
+  input#b_Nuevo,
+  input#b_Eliminar,
+  input#b_Tachar,
+  input#b_Activar,
+  input#b_Marcar,
+  input#b_MarcarColor,
+  input#b_Desmarcar,
+  input#b_Ordenar {
+    background-size: 16px;
+  }
+
+  input.boton-edicion {
+    margin: 0 1%;
+    width: 16px;
+    background-size: 16px;
+  }
+  div#platos label span {
+    margin-left: 5%;
+    font-size: 1rem;
+  }
+  
+  input[type="checkbox"] {
+    margin: 1% 2%;
+  }
+  
+  input[type="checkbox"]::after {
+    width: 16px;
+    height: 16px;
+    top: -3px;
+    left: -5px;
+  }
+}
